@@ -1,95 +1,217 @@
-<html> 
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-	<title>Colecao</title>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Carros Legais</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+         margin: 0;
+           padding: 0;
+        }
+
+       header, footer {
+            background-color: #222;
+          color: white;
+            text-align: center;
+          padding: 15px;
+       }
+
+        nav {
+           background-color: #444;
+            padding: 10px;
+         text-align: center;
+        }
+
+       nav a {
+            color: white;
+           margin: 10px;
+          text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+      article {
+         background-color: #f4f4f4;
+            padding: 15px;
+           margin-bottom: 15px;
+       }
+
+        aside {
+            background-color: #ddd;
+          padding: 10px;
+            margin-top: 10px;
+        }
+
+      table {
+           width: 100%;
+           border-collapse: collapse;
+        }
+
+       table, th, td {
+          border: 1px solid black;
+            padding: 8px;
+        }
+
+       .header {
+           background-color: #333;
+        }
+
+        #main {
+           padding: 20px;
+        }
+
+      #footer {
+          background-color: #222;
+           color: white;
+        }
+    </style>
 </head>
 
-<style>
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
+<body>
 
-	body {
-		height: 100%;
-		width: 100%;
-		background-color: rgb(129, 129, 129);
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	}
+<div class="header">
+<header>
+    <h1>Lendas Automotivas (Anos 90)</h1>
+   <p>Projeto de Front-End</p>
+</header>
+</div>
 
-	.nav {
-		width: 100%;
-		height: 10vh;
-		background-color: rgb(21, 65, 0);
-	}
+<nav>
+    <a href="#sobre" target="_self">Sobre o Autor</a>
+  <a href="#carros" target="_self">Os Carros</a>
+    <a href="#contato" target="_self" title="Ir para formulário">Contato</a>
+</nav>
 
-	.title {
-		width: 20%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+<div id="main">
+<section id="sobre">
+    <ul>
+        <li>Nissan</li>
+      <li>Mitsubishi</li>
+        <li>BMW</li>
+      <li>Toyota</li>
+    </ul>
+</section>
 
-	.item {
-		height: 40vh;
-		width: 30vh;
-		margin: 20px;
-	}
+<section id="carros">
+  <h2>As Máquinas</h2>
 
-	.imagem {
-		width: 70%;
-		height:  70%;
-	}
+    <article>
+       <h3>Nissan Skyline GT-R (R34)</h3>
+      <p>O famoso Godzilla. Um monstro nas pistas e o sonho de qualquer gearhead.</p>
+        <p><strong>Motor:</strong> RB26DETT (2.6L Twin-Turbo 6 cilindros em linha)</p>
+       <p><strong>Velocidade Máxima:</strong> Limitado a ~250 km/h no Japão (mas passa dos 300 km/h sem o limitador).</p>
+    </article>
 
-	section {
-		width: 100%;
-		height: 100%;
-	}
+   <article>
+       <h3>Mitsubishi Eclipse GSX (2G)</h3>
+       <p>Ficou eternizado nos filmes de corrida. Tração integral e motor que aguenta muito desaforo.</p>
+         <p><strong>Motor:</strong> 4G63T (2.0L Turbo 4 cilindros)</p>
+       <p><strong>Velocidade Máxima:</strong> Cerca de 220 km/h originais.</p>
+    </article>
 
-	h1{
-		font-size: 20px;
-	}
-</style>
+    <article>
+        <h3>BMW E36 (M3)</h3>
+       <p>Puro suco da engenharia alemã. Tração traseira perfeita para fazer drift.</p>
+        <p><strong>Motor:</strong> S50B30 (3.0L 6 cilindros em linha naturalmente aspirado)</p>
+       <p><strong>Velocidade Máxima:</strong> 250 km/h (limitado eletronicamente).</p>
+    </article>
 
-<body> 
+     <article>
+        <h3>Toyota Supra (MK4)</h3>
+       <p>A lenda dos anos 90 com o bloco de motor mais resistente já feito.</p>
+        <p><strong>Motor:</strong> 2JZ-GTE (3.0L Twin-Turbo 6 cilindros em linha)</p>
+       <p><strong>Velocidade Máxima:</strong> 250 km/h (também limitado pelas regras japonesas da época).</p>
+    </article>
 
-	<nav class="nav">
-		<div class="title">
-			<h1>Colecao de video game</h1>
-		</div>
-	</nav>
+    <aside>
+        <h4>Observação Curiosa</h4>
+      <p>Na época, existia um "acordo de cavalheiros" no Japão onde as montadoras declaravam no máximo 276 cavalos de potência, mas o Skyline e o Supra saíam de fábrica com muito mais que isso na vida real!</p>
+    </aside>
 
-	<section >
+   <h3>Comparativo de Potência Declarada</h3>
+    <table>
+        <tr>
+            <th>Carro</th>
+          <th>Potência (CV)</th>
+        </tr>
+      <tr>
+            <td>Skyline GT-R R34</td>
+            <td>276 cv</td>
+        </tr>
+        <tr>
+           <td>Eclipse GSX</td>
+           <td>210 cv</td>
+        </tr>
+        <tr>
+          <td>BMW M3 E36</td>
+            <td>286 cv</td>
+       </tr>
+         <tr>
+          <td>Supra MK4</td>
+            <td>276 cv</td>
+       </tr>
+    </table>
+</section>
 
-		<h1>MOTION CONTROLLERS PS3</h1>
-		<div class="item">
-			<img class="imagem" src="./assets/1.jpg" alt="">
-			<h1>Controle de movimento do playstation 3</h1>
-		</div>
+<section id="contato">
+    <h2>Diz aí qual seu estilo</h2>
 
-		<h1>Nintendo 3ds</h1>
-		<div class="item">
-			<img class="imagem" src="./assets/2.jpg" alt="">
-			<h1>Console portatil da Nintendo</h1>
-		</div>
+    <form>
+       <fieldset>
+          <legend>Formulário Gearhead</legend>
 
+           <label for="nome">Seu Nome:</label><br>
+         <input type="text" id="nome" name="nome"><br><br>
 
-		<h1>Nintendo N64</h1>
-		<div class="item">
-			<img class="imagem" src="./assets/3.jpg" alt="">
-			<h1>PRIMEIRO video game 3d nintendo</h1>
-		</div>
+            <label>Qual você prefere?</label><br>
+            <input type="radio" name="estilo"> JDM (Japoneses)
+           <input type="radio" name="estilo"> Euro (Europeus)<br><br>
 
+            <label>O que não pode faltar num projeto?</label><br>
+            <input type="checkbox"> Kit Turbo
+          <input type="checkbox"> Tração Traseira (RWD)
+             <input type="checkbox"> Escapamento Direto<br><br>
 
-		<h1>SUPER FAMICOM</h1>
-		<div class="item">
-			
-			<img class="imagem" src="./assets/4.jpg" alt="">
-			<h1>Video game do primeiro jogo do mario</h1>
-		</div>
-	</section>
+           <label for="carroFav">Seu carro favorito dessa lista:</label>
+           <select id="carroFav">
+              <option>Nissan Skyline</option>
+              <option>Mitsubishi Eclipse</option>
+               <option>BMW E36</option>
+                <option>Toyota Supra</option>
+            </select><br><br>
 
+            <label for="montadora">Montadora do coração:</label>
+          <input list="montadoras" name="montadora">
+            <datalist id="montadoras">
+              <option value="Nissan">
+                <option value="Mitsubishi">
+               <option value="BMW">
+                <option value="Toyota">
+            </datalist><br><br>
+
+            <label for="mensagem">Deixe um comentário:</label><br>
+            <textarea name="mensagem" rows="5" cols="30" placeholder="Aquele 2JZ canta bonito..."></textarea><br><br>
+
+          <input type="submit" value="Mandar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+    </form>
+
+</section>
+</div>
+
+<div id="footer">
+<footer>
+   <h5>Trabalho de HTML e CSS Básico</h5>
+</footer>
+</div>
 
 </body>
 </html>
