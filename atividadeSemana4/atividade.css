@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+#pagina{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    padding:20px;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    margin-bottom:15px;
+}
+
+header h1{
+    margin-bottom:5px;
+}
+
+nav{
+    background:#34495e;
+    margin-bottom:20px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding:12px 18px;
+    color:white;
+    text-decoration:none;
+    transition:0.2s;
+}
+
+nav ul li a:hover{
+    background:#1abc9c;
+}
+
+section{
+    margin-bottom:35px;
+}
+
+section h2{
+    margin-bottom:10px;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+article{
+    margin-bottom:15px;
+    padding:10px;
+    border-left:4px solid #1abc9c;
+    background:#fafafa;
+}
+
+aside{
+    background:#eef6ff;
+    padding:10px;
+    border-left:4px solid #3498db;
+    margin-top:10px;
+}
+
+blockquote{
+    background:#f0f0f0;
+    padding:10px;
+    margin-top:10px;
+    border-left:4px solid #999;
+    font-style:italic;
+}
+
+code{
+    background:#eee;
+    padding:3px 6px;
+    border-radius:4px;
+}
+
+pre{
+    background:#272822;
+    color:#eee;
+    padding:10px;
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table th, table td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:left;
+}
+
+table th{
+    background:#1abc9c;
+    color:white;
+}
+
+caption{
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+form{
+    margin-top:10px;
+}
+
+fieldset{
+    border:1px solid #ccc;
+    padding:15px;
+}
+
+legend{
+    font-weight:bold;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:4px;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+
+textarea{
+    min-height:80px;
+}
+
+input{
+    background:#1abc9c;
+    color:white;
+    border:none;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+input:hover{
+    background:#16a085;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+footer address{
+    font-style:normal;
+    margin-top:5px;
+}
