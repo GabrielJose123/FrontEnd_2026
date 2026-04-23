@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main {
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+
+.groupCard {
+    height: 400px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: rgb(8, 59, 57);
+}
+
+.title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+
+}
+
+</style>
+
+<body style="width: 100%; height: 100%;background-color: gainsboro; ">
+
+
+    <div class="header">
+        <h1>Grupos e Fatos</h1>
+    </div>
+
+    <div class="main" id="main">
+
+    <div  class="groupCard">
+        <h2 class="title">Grupo A</h2>
+
+        <h4>Seleções</h4>
+
+        <ul>
+            <li>México</li>
+            <li>África do Sul</li>
+            <li>Coreia do Sul</li>
+            <li>República Tcheca</li>
+        </ul>
+
+        <h2>Fatos:</h2>
+
+        <p>
+            O jogo de abertura será México x África do Sul. Confrontos entre Coreia do Sul e seleções europeias já ocorreram em várias Copas, com histórico equilibrado.
+        </p>
+    </div>
+
+    <div  class="groupCard">
+        <h2 class="title">Grupo B</h2>
+
+        <h4>Seleções</h4>
+
+        <ul>
+            <li>Canadá</li>
+            <li>Suíça</li>
+            <li>Catarl</li>
+            <li>Vaga Europeia (Bósnia)</li>
+        </ul>
+
+        <h2>Fatos:</h2>
+
+        <p>
+            O Canadá joga em casa, fator importante de desempenho. Catar e Suíça já se enfrentaram recentemente em amistosos internacionais.
+        </p>
+    </div>
+
+    <div  class="groupCard">
+        <h2 class="title">Grupo C</h2>
+
+        <h4>Seleções</h4>
+
+        <ul>
+            <li>Brasil</li>
+            <li>Marrocos</li>
+            <li>Haiti</li>
+            <li>Escócia</li>
+        </ul>
+
+        <h2>Fatos:</h2>
+
+        <p>
+            Brasil, Marrocos e Escócia já dividiram grupo em 1998. Brasil nunca perdeu para a Escócia em Copas.
+        </p>
+    </div>
+
+    <button id="btn">PASSAR PARA PROXIMO</button>
+
+    </div>
+
+    <script>
+
+        const criarHtmlGrupo = (
+        title,
+        selecao1,selecao2,selecao3,selecao4,
+        fatos
+        ) => {
+            return `<div  class="groupCard">
+                <h2 class="title">${title}</h2>
+
+                <h4>Seleções</h4>
+
+                <ul>
+                    <li>${selecao1}</li>
+                    <li>${selecao2}</li>
+                    <li>${selecao3}</li>
+                    <li>${selecao4}</li>
+                </ul>
+
+                <h2>Fatos:</h2>
+
+                <p>
+                   ${fatos}
+                </p>
+            </div>`
+        }
+
+        const grupo1 = criarHtmlGrupo(
+            'Grupo D',
+            'Estados Unidos','Paraguai','Austrália','Turquia',
+            ' Os EUA jogam em casa, vantagem histórica em Copas.Austrália enfrenta frequentemente seleções sul-americanas em torneios.'
+        );
+
+        const grupo2 = criarHtmlGrupo(
+            'Grupo E',
+            'Alemanha','Equador','Costa do Marfim','Curaçao',
+            ' Alemanha costuma dominar fases de grupos.Equador e Costa do Marfim têm estilos físicos semelhantes.'
+        );
+
+        const grupo3 = criarHtmlGrupo(
+            'Grupo F',
+            'Holanda','Japão','Tunísia','Suécia',
+            '  Brasil, Marrocos e Escócia já dividiram grupo em 1998. Brasil nunca perdeu para a Escócia em Copas.'
+        );
+
+        const grupos = `${grupo1}
+        ${grupo2}
+        ${grupo3}`
+
+
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', () => {
+            document.getElementById('main').innerHTML = grupos;
+        })
+    </script>
+
+</body>
+</html>
